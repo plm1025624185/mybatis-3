@@ -40,6 +40,8 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 /**
+ * xml解析工具类
+ *
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */
