@@ -27,6 +27,7 @@ import java.util.Properties;
 
 /**
  * A class to simplify access to resources through the classloader.
+ * 这是一个通过加载类加载器简化对资源访问的工具类
  *
  * @author Clinton Begin
  */
@@ -37,6 +38,7 @@ public class Resources {
   /**
    * Charset to use when calling getResourceAsReader.
    * null means use the system default.
+   * 当调用getResourceAsReader方法时所使用的编码格式，如果为null则使用系统默认的编码格式
    */
   private static Charset charset;
 
@@ -45,6 +47,7 @@ public class Resources {
 
   /**
    * Returns the default classloader (may be null).
+   * 返回默认的类加载器（也可能是为null）
    *
    * @return The default classloader
    */
@@ -54,6 +57,7 @@ public class Resources {
 
   /**
    * Sets the default classloader
+   * 设置默认的类加载器
    *
    * @param defaultClassLoader - the new default ClassLoader
    */
@@ -91,6 +95,7 @@ public class Resources {
 
   /**
    * Returns a resource on the classpath as a Stream object
+   * 将classpath下的资源转换为Stream对象
    *
    * @param resource The resource to find
    * @return The resource
@@ -102,6 +107,7 @@ public class Resources {
 
   /**
    * Returns a resource on the classpath as a Stream object
+   * 将classpath下的资源转换为Stream对象
    *
    * @param loader   The classloader used to fetch the resource
    * @param resource The resource to find
