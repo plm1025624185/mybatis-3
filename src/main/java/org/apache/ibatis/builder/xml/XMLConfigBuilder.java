@@ -47,6 +47,10 @@ import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.type.JdbcType;
 
 /**
+ * 将xml中的配置转换成Configuration实体类
+ * 如果存在类型别名（typeAliases）会将其注册到TypeAliasRegistry类中
+ * 如果存在类型处理器（typeHandlers）会将其注册到TypeHandlerRegistry类中
+ * 
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */
