@@ -20,6 +20,10 @@ import java.net.URL;
 
 /**
  * A class to wrap access to multiple class loaders making them work as one
+ * 将多个类加载器组装成一个
+ * 当前加载器的顺序  你定义的类加载器->默认类加载器（defaultClassLoader）
+ * ->当前线程下的类加载器（Thread.currentThread().getContextClassLoader()）->当前类的加载器（getClass().getClassLoader()）
+ * ->系统类加载器（systemClassLoader）
  *
  * @author Clinton Begin
  */
