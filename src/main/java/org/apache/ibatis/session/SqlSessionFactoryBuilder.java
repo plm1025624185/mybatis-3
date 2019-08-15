@@ -27,6 +27,12 @@ import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
 
 /**
  * Builds {@link SqlSession} instances.
+ * SqlSessionFactory的创建类
+ * 由于配置方式有两种，一种xml配置，一种java类配置，这里对应了SqlSessionFactoryBuilder的两种创建方法
+ * xml配置：
+ *    public SqlSessionFactory build(Reader reader, String environment, Properties properties)
+ *    public SqlSessionFactory build(InputStream inputStream, String environment, Properties properties)
+ * java类配置：public SqlSessionFactory build(Configuration config)
  *
  * @author Clinton Begin
  */
